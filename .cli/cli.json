@@ -1,0 +1,54 @@
+{
+  "save": {
+    "params": [
+      {
+        "name": "key",
+        "types": [
+          "string",
+          "number"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "string",
+          "number",
+          "boolean",
+          {
+            "name": "value",
+            "object": []
+          }
+        ]
+      }
+    ],
+    "description": "Save the data identified by the unique key."
+  },
+  "show": {
+    "params": [
+      {
+        "name": "key",
+        "types": [
+          "string",
+          "number"
+        ]
+      }
+    ],
+    "description": "Show the data identified by the unique key."
+  },
+  "del": {
+    "params": [
+      {
+        "name": "key",
+        "types": [
+          "string",
+          "number"
+        ]
+      }
+    ],
+    "description": "Delets a key from the localStorage"
+  },
+  "info": {
+    "params": [],
+    "description": ""
+  }
+}

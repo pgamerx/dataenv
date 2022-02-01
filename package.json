@@ -1,6 +1,14 @@
 {
-  "name": "data",
-  "version": "0.0.0",
+  "name": "dataenv",
+  "description": " ",
+  "author": {
+    "name": "PGamerX",
+    "email": "admin@pgamerx.com"
+  },
+  "keywords": [
+    "data", "dataenv", "save data", "data save", "temp data save", "data temp", "save temp", "data cli", "temp cli"
+  ],
+  "version": "1.0-beta.1",
   "main": "./.cli/cli.js",
   "bin": "./.cli/cli.js",
   "files": [
@@ -13,11 +21,14 @@
     "dev": "nodemon -e ts --ignore *.tmp.ts -x 'ts-cli-generator build && node . $1'"
   },
   "devDependencies": {
+    "@types/node": "^17.0.14",
     "nodemon": "2.x",
     "ts-morph": "13.x",
     "typescript": "*"
   },
   "dependencies": {
-    "@christianjuth/ts-cli-generator": "*"
+    "@christianjuth/ts-cli-generator": "*",
+    "@types/node-localstorage": "^1.3.0",
+    "node-localstorage": "^2.2.1"
   }
 }
