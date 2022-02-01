@@ -1,14 +1,22 @@
 {
   "name": "dataenv",
-  "description": " ",
+  "description": "DataENV is a cli tool that allows you to save data temporarily using your terminal.  ",
   "author": {
     "name": "PGamerX",
     "email": "admin@pgamerx.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgamerx/dataenv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pgamerx/dataenv/issues"
+  },
+  "license": "Apache-2.0",
   "keywords": [
     "data", "dataenv", "save data", "data save", "temp data save", "data temp", "save temp", "data cli", "temp cli"
   ],
-  "version": "1.0-beta.1",
+  "version": "1.0.0-beta.1",
   "main": "./.cli/cli.js",
   "bin": "./.cli/cli.js",
   "files": [
