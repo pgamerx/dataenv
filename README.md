@@ -9,18 +9,18 @@ npm install -g dataenv
 ### Table of Contents
 
 *   [LocalStorage][1]
-*   [save][2]
+*   [npx dataenv save][2]
     *   [Parameters][3]
-*   [show][4]
+*   [npx dataenv show][4]
     *   [Parameters][5]
-*   [del][6]
+*   [npx dataenv del][6]
     *   [Parameters][7]
 
-## LocalStorage
+## Node-LocalStorage
 
-Initialise The LocalStore
+We use node-lolcalstorage to store the data in the local storage in a folder called `tmp/node-dataenv-localStorage`
 
-## npx dataenv save
+## `npx dataenv save`
 
 Save the data identified by the unique key.
 
@@ -31,7 +31,7 @@ Save the data identified by the unique key.
 
 Returns **any** The value saved along with the key.
 
-## npx dataenv show
+## `npx dataenv show`
 
 Show the data identified by the unique key.
 
@@ -41,7 +41,7 @@ Show the data identified by the unique key.
 
 Returns **any** The value saved in the localStorage identified by the key.
 
-## npx dataenv del
+## `npx dataenv del`
 
 Delets a key from the localStorage
 
@@ -64,22 +64,6 @@ Returns **any** The key deleted from the localStorage.
 [6]: #del
 
 [7]: #parameters-2
-
-## Installation
-### Run CLI
-```bash
-  npm start
-```
-
-### Run with nodemon
-```bash
-  npm run dev
-```
-
-### Build
-```bash
-  npm run build
-```
 
 ### Install CLI locally
 ```bash
