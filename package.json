@@ -1,0 +1,23 @@
+{
+  "name": "data",
+  "version": "0.0.0",
+  "main": "./.cli/cli.js",
+  "bin": "./.cli/cli.js",
+  "files": [
+    ".cli",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "ts-cli-generator build",
+    "start": "ts-cli-generator build && node .",
+    "dev": "nodemon -e ts --ignore *.tmp.ts -x 'ts-cli-generator build && node . $1'"
+  },
+  "devDependencies": {
+    "nodemon": "2.x",
+    "ts-morph": "13.x",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "@christianjuth/ts-cli-generator": "*"
+  }
+}
