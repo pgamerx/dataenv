@@ -1,37 +1,73 @@
-## Welcome to GitHub Pages
+# DataEnv CLI
 
-You can use the [editor on GitHub](https://github.com/pgamerx/dataenv/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# Instllation 
+```bash
+npm install -g dataenv
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+# Usage 
+### Table of Contents
 
-### Jekyll Themes
+*   [LocalStorage][1]
+*   [npx dataenv save][2]
+    *   [Parameters][3]
+*   [npx dataenv show][4]
+    *   [Parameters][5]
+*   [npx dataenv del][6]
+    *   [Parameters][7]
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pgamerx/dataenv/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Node-LocalStorage
 
-### Support or Contact
+We use node-lolcalstorage to store the data in the local storage in a folder called `tmp/node-dataenv-localStorage`
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## `npx dataenv save`
+
+Save the data identified by the unique key.
+
+### Parameters
+
+*   `key`  The Unique key to identify the data.
+*   `value`  The Value to save in the localStorage identified by the key.
+
+Returns **any** The value saved along with the key.
+
+## `npx dataenv show`
+
+Show the data identified by the unique key.
+
+### Parameters
+
+*   `key`  The unique key to identify the data
+
+Returns **any** The value saved in the localStorage identified by the key.
+
+## `npx dataenv del`
+
+Delets a key from the localStorage
+
+### Parameters
+
+*   `key`  The unique key to identify the data
+
+Returns **any** The key deleted from the localStorage.
+
+[1]: #node-localstorage
+
+[2]: #npx-dataenv-save
+
+[3]: #parameters
+
+[4]: #npx-dataenv-show
+
+[5]: #parameters-1
+
+[6]: #npx-dataenv-del
+
+[7]: #parameters-2
+
+### Install CLI locally
+```bash
+  # (make sure you build before linking)
+  npm link
+  dataenv
+```
