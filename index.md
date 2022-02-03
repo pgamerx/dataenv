@@ -1,3 +1,8 @@
+---
+title: DataEnv
+description: DataENV is a cli tool that allows you to save data temporarily using your terminal
+---
+
 # DataEnv CLI
 
 # Instllation 
