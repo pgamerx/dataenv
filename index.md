@@ -25,7 +25,7 @@ npm install -g dataenv
 
 We use node-lolcalstorage to store the data in the local storage in a folder called `tmp/node-dataenv-localStorage`
 
-## `npx dataenv save`
+## npx dataenv save
 
 Save the data identified by the unique key.
 
@@ -36,7 +36,7 @@ Save the data identified by the unique key.
 
 Returns **any** The value saved along with the key.
 
-## `npx dataenv show`
+## npx dataenv show
 
 Show the data identified by the unique key.
 
@@ -46,7 +46,7 @@ Show the data identified by the unique key.
 
 Returns **any** The value saved in the localStorage identified by the key.
 
-## `npx dataenv del`
+## npx dataenv del
 
 Delets a key from the localStorage
 
